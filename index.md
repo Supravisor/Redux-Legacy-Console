@@ -6,6 +6,6 @@
 
 </div>
 
-<div>
-  <textarea id="preview"></textarea>
+<div id="preview">
+  
 </div>
