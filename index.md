@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" href="styles.css" />
+
 <div id="editor">
 
 </div>
