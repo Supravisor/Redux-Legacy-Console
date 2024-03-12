@@ -5,7 +5,7 @@
 
 </div>
 
-<div id="output">
-  <textarea></textarea>
+<div>
+  <textarea id="preview"></textarea>
 
 </div>
