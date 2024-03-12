@@ -1,0 +1,37 @@
+
+body {
+  background: Yellow;
+  margin-left: 330px;
+}
+
+h1 {
+  font-family: Corbel;  
+}
+
+#editor {
+  background: SlateGrey;
+  padding: 0px;
+  
+}
+
+#preview {
+  background: white;
+  border-radius: 7px;
+  
+}
+
+.container {
+  display: flex;
+  gap: 1fr;
+  width: 100%;
+}
+
+#preview, #editor {
+  border: 3px solid black;
+  display: unset;
+  height: 60vh;
+  width: 50%;
+  margin: 10px;
+  padding-left: 5px;
+  color: black;
+}
