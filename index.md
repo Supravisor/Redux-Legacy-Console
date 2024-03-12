@@ -9,3 +9,5 @@
 <div id="preview">
   
 </div>
+
+<script src="script.js"></script>
