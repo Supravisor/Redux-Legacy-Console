@@ -1,9 +1,6 @@
 import ReactDOM from "https://esm.sh/react-dom";
 
-let marked = "marked";
 
-marked.use({
-  breaks: true });
 
 class Input extends React.Component {
   constructor(props) {
@@ -11,17 +8,11 @@ class Input extends React.Component {
     this.state = {
       markdown: "" };
 
-    // Change code below this line
-
-    // Change code above this line
   }
-
-  // Change code below this line
   updateMarkdown(markdown) {
     this.setState({ markdown });
   }
 
-  // Change code above this line
   render() {
     return /*#__PURE__*/(
       React.createElement("div", { class: "container" }, /*#__PURE__*/
