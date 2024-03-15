@@ -6,4 +6,4 @@
 </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
