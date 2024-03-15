@@ -2,6 +2,9 @@ import ReactDOM from "https://esm.sh/react-dom";
 
 let marked = "marked";
 
+marked.use({
+  breaks: true });
+
 class Input extends React.Component {
   constructor(props) {
     super(props);
