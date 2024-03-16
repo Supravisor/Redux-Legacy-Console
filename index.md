@@ -6,7 +6,7 @@
   <textarea id="preview" name="editor"></textarea>
 
   <input type="button" class="" value="add text" onclick="document.editor.textbox.value+='add text'">
-  <textarea id="preview"></textarea>
+
   
 
 </div>
