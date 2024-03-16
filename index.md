@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="styles.css" />
 
 <div id="markdown">
+  <textarea id="preview"></textarea>
   
 </div>
 
