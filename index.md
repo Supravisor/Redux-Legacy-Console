@@ -2,9 +2,10 @@
 <link rel="stylesheet" href="styles.css" />
 
 <div id="markdown">
-  <textarea id="preview"></textarea>
-  
+  <textarea id="preview" name="editor"></textarea>
+
+  <input type="button" class="" value="add text" onclick="document.editor.textbox.value+='add text'">
 </div>
 
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script> -->
+
 <!--  <script src="script.js" type="module"></script> -->
