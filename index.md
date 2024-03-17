@@ -3,8 +3,9 @@
 
 <div id="markdown">
 
+
   <form name="editor>
-    <textarea id="preview" name="editor"></textarea>
+    <textarea id="preview" name="textbox"></textarea>
 
     <input type="button" class="" value="add text" onclick="document.editor.textbox.value+='add text'">
 
