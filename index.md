@@ -5,11 +5,11 @@
 
   <form name="editor">
 
-    <aside>
+    <aside id="buttons">
       <input type="button" class="" value="add text" onclick="document.editor.textbox.value+='add text'">
     </aside>
 
-    <aside>
+    <aside id="textbox">
       <textarea id="preview" name="textbox"></textarea>
     </aside>
 
