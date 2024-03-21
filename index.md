@@ -1,11 +1,10 @@
 <link rel="stylesheet" href="styles.css" />
 
-<div>
+
 
   <form name="editor">
 
    <table>
-     <tbody>
        <tr>
          <td>
     <aside id="buttons">
@@ -19,12 +18,12 @@
          </td>    
        <tr>
 
-     </tbody>
+
    </table>
 
   </form>
 
-</div>
+
 
 
 <!--  <script src="script.js" type="module"></script> -->
