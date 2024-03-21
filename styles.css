@@ -26,11 +26,13 @@ td {
 
 #buttons, #preview {
   border: 3px solid black;
-  height: 90vh; 
   width: 35vw;
   margin: 10px;
   padding-left: 5px;
   color: black;
+}
+#buttons {
+  height: 90vh; 
 }
 
 #preview {
