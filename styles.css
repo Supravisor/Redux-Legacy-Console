@@ -7,6 +7,10 @@ h1 {
   font-family: Corbel;  
 }
 
+table {
+  background: transparent;
+}
+
 aside {
   height: 60vh;
   width: 35vw; 
@@ -26,7 +30,7 @@ td {
   color: black;
 }
 #buttons {
-  height: 90vh; 
+  height: 85vh; 
 }
 
 #preview {
