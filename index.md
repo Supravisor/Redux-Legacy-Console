@@ -6,11 +6,11 @@
   <form name="editor"><table><tr><td><aside id="buttons">
 <input class="name" type="button" value="reducer function">
 initial value: <input value="0" name="reducer" size="10" type="textfield">
-<input type="button" class="button btn primary" value="create" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value +') => {\n  return state;\n}\n\n'">
+<input type="button" class="button btn btn-primary" value="create" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value +') => {\n  return state;\n}\n\n'">
 
 
 <br /><input class="name" type="button" value="store">
-<input type="button" class="button btn danger" value="create" onclick="document.editor.textbox.value+='let store = Redux.createStore(reducer);\n'">
+<input type="button" class="button btn btn-danger" value="create" onclick="document.editor.textbox.value+='let store = Redux.createStore(reducer);\n'">
 
     </aside>
          </td><td>
