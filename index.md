@@ -2,6 +2,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 <link rel="stylesheet" href="styles.css" />
 
+<style>h1 {
+  font-family: Corbel;
+  color: white;
+}
+</style>
+
 <form name="editor"><table><tr><td><aside id="buttons">
 <input class="name" type="button" value="reducer function">
 initial value: <input value="0" name="reducer" size="10" type="textfield">
