@@ -9,6 +9,21 @@ initial value: <input value="0" name="reducer" size="10" type="textfield">
 
 <br /><input class="name" type="button" value="store">
 <input type="button" class="button btn btn-danger" value="create" onclick="document.editor.textbox.value+='let store = Redux.createStore(reducer);\n'">
+
+
+
+initial value: <input value="0" name="reducer" size="10" type="textfield">
+<input type="button" class="button blue" value="create a Redux Store" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value +') => {\n  return state;\n}\n\n'">
+
+
+<br />
+<input type="button" class="button blue" value="define store I" onclick="document.editor.textbox.value+='const store = Redux.createStore(reducer);\n'">
+
+<input type="button" class="button blue" value="define store II" onclick="document.editor.textbox.value+='const store = Redux.createStore(\n  (state = ' + document.editor.reducer.value +') => state\n);\n\nconst store = Redux.createStore(reducer);\n\n'">
+
+<br />
+<input type="button" class="button blue" value="get state from Redux store" onclick="document.editor.textbox.value+='let currentState = store.getState();\n'">
+
     </aside>
          </td><td>
     <aside id="textbox">
