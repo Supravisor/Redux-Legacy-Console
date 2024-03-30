@@ -9,10 +9,12 @@
 }
 </style>
 
-<table><tr><td>
-      <aside id="buttons">
-  <form name="editor">
-    <input class="name" type="button" value="reducer function">
+<form name="editor">
+  <table>
+    <tr>
+      <td>
+        <aside id="buttons">
+    
 initial value:
     <input value="0" name="reducer" size="10" type="textfield">
     <input type="button" class="button btn btn-primary" value="create" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value +') => {\n  return state;\n}\n\n'">
@@ -28,8 +30,15 @@ initial value: <input value="0" name="reducer" size="10" type="textfield">
     <input type="button" class="button btn btn-primary" value="define store II" onclick="document.editor.textbox.value+='const store = Redux.createStore(\n  (state = ' + document.editor.reducer.value +') => state\n);\n\nconst store = Redux.createStore(reducer);\n\n'">
 
     <br />
-    <input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'"></form>
-      </aside>
-         </td><td>
-    <aside id="textbox">
-      <textarea id="preview" name="textbox"></textarea></aside></td><tr></table>
+    <input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'">
+        </aside>
+      </td>
+      <td>
+        <aside id="textbox">
+          <textarea id="preview" name="textbox">
+          </textarea>
+        </aside>
+      </td>
+    </tr>
+  </table>
+</form>
