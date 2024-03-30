@@ -8,8 +8,9 @@ table {
 }
 
 td {
-  padding: 5px;
+  margin: 5px;
 }
+
 aside {
   height: 60vh;
   width: 35vw; 
