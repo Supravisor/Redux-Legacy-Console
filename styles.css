@@ -7,6 +7,9 @@ table {
   background: transparent;
 }
 
+td {
+  padding: 5px;
+}
 aside {
   height: 60vh;
   width: 35vw; 
