@@ -3,8 +3,12 @@ body {
   background: #8250df;
 }
 
-table {
+table, aside {
   background: transparent;
+}
+
+input {
+  padding: 5px;
 }
 
 aside {
