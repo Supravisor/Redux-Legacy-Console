@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="styles.css" />
 
 <style>
-  h1.a {
+  h1 > a {
   font-family: Corbel;
   color: white;
 }
