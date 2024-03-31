@@ -1,10 +1,18 @@
 
-body, form, td:nth-of-type(2) {
+body, td:nth-of-type(2) {
   background: #8250df;
 }
 
 h1 {
   border-bottom: none;
+}
+
+table {
+  border: none;
+}
+
+td {
+  vertical-align: top;
 }
 
 input {
@@ -20,10 +28,6 @@ input {
   padding: 10px;  
 }
 
-td {
-  vertical-align: top;
-}
-
 #buttons, #preview {
   border: 3px solid black;
   color: black;
@@ -36,4 +40,5 @@ td {
 #preview {
   border-radius: 7px;
   height: 60vh;
+  margin-top: -6px;
 }
