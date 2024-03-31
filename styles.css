@@ -1,5 +1,5 @@
 
-body, form, td:nth-of-type (2) {
+body, form, td:nth-of-type(2) {
   background: #8250df;
 }
 
