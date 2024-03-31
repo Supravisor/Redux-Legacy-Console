@@ -11,8 +11,7 @@ input {
   padding: 5px;
 }
 
-aside {
-  height: 60vh;
+#buttons, #preview {
   width: 35vw; 
 }
 
@@ -29,12 +28,12 @@ td {
   border: 3px solid black;
   color: black;
 }
+
 #buttons {
   height: 85vh; 
 }
 
 #preview {
   border-radius: 7px;
-  width: 35vw; 
   height: 60vh;
 }

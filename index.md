@@ -24,8 +24,8 @@ initial value: <input value="0" name="reducer" size="10" type="textfield">
     <input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'">
         
       </td>
-      <td>
-        <textarea id="preview" name="textbox" id="textbox"></textarea>
+      <td id="textbox">
+        <textarea id="preview" name="textbox"></textarea>
       </td>
     </tr>
   </table>
