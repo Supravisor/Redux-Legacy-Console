@@ -15,10 +15,6 @@ td {
   vertical-align: top;
 }
 
-input {
-  padding: 5px;
-}
-
 #buttons, #preview {
   width: 35vw; 
 }
