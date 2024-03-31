@@ -3,6 +3,10 @@ body, form {
   background: #8250df;
 }
 
+h1 {
+  border-bottom: none;
+}
+
 table, aside {
   background: transparent;
 }
