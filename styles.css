@@ -1,5 +1,5 @@
 
-body, form, td:nth-of-type(2) {
+body, td:nth-of-type(2) {
   background: #8250df;
 }
 
@@ -7,13 +7,12 @@ h1 {
   border-bottom: none;
 }
 
-td {
-  vertical-align: top;
+table {
+  border: none;
 }
 
-td:nth-of-type(2) {
-  padding-top: 0;
-  border: none;
+td {
+  vertical-align: top;
 }
 
 input {
@@ -41,4 +40,5 @@ input {
 #preview {
   border-radius: 7px;
   height: 60vh;
+  margin-top: -6px;
 }
