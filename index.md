@@ -6,6 +6,7 @@
   h1 > a {
   font-family: Corbel;
   color: white;
+  border-bottom: none;
 }
 </style>
 
