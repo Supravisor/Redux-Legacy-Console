@@ -7,16 +7,12 @@ h1 {
   border-bottom: none;
 }
 
-table {
+tbody {
   border: none;
 }
 
 td {
   vertical-align: top;
-}
-
-input {
-  padding: 5px;
 }
 
 #buttons, #preview {
