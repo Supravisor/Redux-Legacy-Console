@@ -6,8 +6,10 @@
   h1 > a {
   font-family: Corbel;
   color: white;
-}
-
+  }
+  h1 {
+  border-bottom: none;
+  }
 </style>
 
 <form name="editor">
