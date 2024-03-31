@@ -13,9 +13,7 @@
 <form name="editor">
   <table>
     <tr>
-      <td>
-        <aside id="buttons">
-
+      <td id="buttons">
 initial value: <input value="0" name="reducer" size="10" type="textfield">
     <input type="button" class="button btn btn-primary" value="create a Redux Store" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value +') => {\n  return state;\n}\n\n'">
     <br /><br />
@@ -24,12 +22,10 @@ initial value: <input value="0" name="reducer" size="10" type="textfield">
 
     <br /><br />
     <input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'">
-        </aside>
+        
       </td>
       <td>
-        <aside id="textbox">
-          <textarea id="preview" name="textbox"></textarea>
-        </aside>
+        <textarea id="preview" name="textbox" id="textbox"></textarea>
       </td>
     </tr>
   </table>
