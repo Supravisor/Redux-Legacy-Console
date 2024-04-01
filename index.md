@@ -8,8 +8,13 @@
   color: white;
   }
   h1 {
-  border-bottom: none;
+  border-bottom: 1px solid black;
   }
+
+  tbody {
+  border-color: none;
+  }
+
 </style>
 
 <form name="editor">
