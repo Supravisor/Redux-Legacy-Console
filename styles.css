@@ -3,12 +3,9 @@ body, td:nth-of-type(2) {
   background: #8250df;
 }
 
-h1 {
-  border-bottom: none;
-}
 
-tr {
-  border-color: #8250df;
+tbody {
+  border-color: none;
 }
 
 td {
