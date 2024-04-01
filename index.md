@@ -12,8 +12,8 @@
   border: none;
   }
 
-  tbody {
-  border-color: none;
+  table, tbody {
+  border: 1px solid black;
   }
 
 </style>
