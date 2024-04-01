@@ -5,7 +5,7 @@
 <style>
   h1 > a {
   font-family: Corbel;
-  color: white;
+  color: green;
   }
   h1 {
   border-bottom: 1px solid black;
