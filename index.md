@@ -21,7 +21,6 @@
     <p><input type="button" class="button btn btn-primary" value="define store" onclick="document.editor.textbox.value+='const store = Redux.createStore(reducer);\n'">
     <input type="button" class="button btn btn-primary" value="define store and create a Redux Store" onclick="document.editor.textbox.value+='const store = Redux.createStore(\n  (state = ' + document.editor.reducer.value +') => state\n);\n\nconst store = Redux.createStore(reducer);\n\n'"></p>
 
-    <br /><br />
     <p><input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'"></p>
         
       </td>
