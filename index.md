@@ -7,9 +7,15 @@
   font-family: Corbel;
   color: white;
   }
+  
   h1 {
-  border-bottom: none;
+  border: none;
   }
+
+  tbody {
+  border-color: none;
+  }
+
 </style>
 
 <form name="editor">
