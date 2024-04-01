@@ -13,7 +13,7 @@
   }
 
   tbody {
-  border-color: none;
+  border: 1px solid black;
   }
 
 </style>
