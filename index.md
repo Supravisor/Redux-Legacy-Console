@@ -12,7 +12,7 @@
   border: none;
   }
 
-  tbody {
+  table {
   border: 1px solid black;
   }
 
