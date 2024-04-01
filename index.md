@@ -5,10 +5,11 @@
 <style>
   h1 > a {
   font-family: Corbel;
-  color: green;
+  color: white;
   }
+  
   h1 {
-  border-bottom: 1px solid black;
+  display: none;
   }
 
   tbody {
