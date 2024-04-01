@@ -19,7 +19,7 @@
 </style>
 
 <form name="editor">
-  <table>
+  <table><tbody>
     <tr>
       <td id="buttons">
 <p>initial value: <input value="0" name="reducer" size="10" type="textfield">
@@ -34,5 +34,5 @@
         <textarea id="preview" name="textbox"></textarea>
       </td>
     </tr>
-  </table>
+  </tbody></table>
 </form>
