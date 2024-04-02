@@ -22,7 +22,7 @@
 
 <p><input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'"></p>
 
-<p><input type="button" class="button blue" value="define a Redux action" onclick="document.editor.textbox.value+='\nconst action = {\n  type: &#34;LOGIN&#34;\n}\n'"></p>
+<p><input type="button" class="button btn btn-primary" value="define a Redux action" onclick="document.editor.textbox.value+='\nconst action = {\n  type: &#34;LOGIN&#34;\n}\n'"></p>
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
