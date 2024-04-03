@@ -7,9 +7,14 @@
   font-family: Corbel;
   color: white;
   }
+
   .markdown-body h1 {
   border-bottom: none;
-  ]
+  }
+
+  tbody {
+  border-color: none;
+  }
 
 </style>
 
