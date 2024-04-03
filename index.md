@@ -3,18 +3,19 @@
 <link rel="stylesheet" href="styles.css" />
 
 <style>
-  h1 > a {
+
+h1 > a {
   font-family: Corbel;
   color: white;
-  }
+}
 
-  .markdown-body h1 {
+.markdown-body h1 {
   border-bottom: none;
-  }
+}
 
- .markdown-body table td {
+markdown-body table {
   border: none;
-  }
+}
 
 </style>
 
