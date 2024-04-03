@@ -13,7 +13,7 @@
   }
 
   tbody {
-  border-color: transparent;
+  background-color: red;
   }
 
 </style>
