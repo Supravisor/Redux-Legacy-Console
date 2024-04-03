@@ -12,11 +12,10 @@
   border-bottom: none;
   }
 
- .markdown-body table tr {
-  background-color: red;
-  border-top: 1px solid green;
-}
-  
+ .markdown-body table td {
+  border: none;
+  }
+
 </style>
 
 <form name="editor">
