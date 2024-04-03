@@ -13,7 +13,7 @@ h1 > a {
   border-bottom: none;
 }
 
-markdown-body table {
+markdown-body table td, .markdown-body table th {
   border: none;
 }
 
