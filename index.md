@@ -39,7 +39,7 @@ h1 > a {
 
 <p><input type="button" class="button btn btn-primary" value="dispatch an action event" onclick="document.editor.textbox.value+='\nstore.dispatch(loginAction());\n'" /></p>
 
-<p><input type="button" class="button blue" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'"></p>
+<p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'"></p>
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
