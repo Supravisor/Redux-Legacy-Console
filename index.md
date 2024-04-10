@@ -33,7 +33,8 @@ h1 > a {
 
 <p><input type="button" class="button btn btn-primary" value="get state from Redux store" onclick="document.editor.textbox.value+='const currentState = store.getState();\n'" /></p>
 
-<p><input type="button" class="button btn btn-primary" value="define a Redux action" onclick="document.editor.textbox.value+='\nconst action = {\n  type: &#34;LOGIN&#34;\n}\n'" /></p>
+<p><input type="button" class="button btn btn-primary" value="define a Redux action" onclick="document.editor.textbox.value+='\nconst action = {\n  type: &#34;' + document.editor.action.value + '&#34;\n}\n'" />
+  <input placeholder="action" name="action" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction actionCreator() {\n  return action;\n}\n'" /></p>
 
