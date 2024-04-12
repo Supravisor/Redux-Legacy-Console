@@ -38,8 +38,9 @@ h1 > a {
 
 <p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction actionCreator() {\n  return action;\n}\n'" /></p>
 
-<p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(loginAction());\n'" />
-  <input type="button" class="button btn btn-primary" value="dispatch an action event directly" onclick="document.editor.textbox.value+='\nstore.dispatch({ type: ' + document.editor.action.value + ' });\n'" />
+<p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(loginAction());\n'" /></p>
+
+<p><input type="button" class="button btn btn-primary" value="dispatch an action event directly" onclick="document.editor.textbox.value+='\nstore.dispatch({ type: &#34;' + document.editor.action.value + '&#34; });\n'" />
 </p>
 
 <p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'"></p>
