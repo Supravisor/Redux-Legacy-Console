@@ -38,8 +38,10 @@ h1 > a {
 <p><input type="button" class="button btn btn-primary" value="define a Redux action" onclick="document.editor.textbox.value+='\nconst action = {\n  type: &#34;' + document.editor.action.value + '&#34;\n}\n'" />
   <input placeholder="action" name="action" size="10" type="textfield"></p>
 
-<p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction actionCreator() {\n  return action;\n}\n'" /></p>
+<p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction ' + document.editor.actionCreator.value + '() {\n  return ' + document.editor.action.value + ';\n}\n'" /></p>
 
+  <input placeholder="actionCreator" name="actionCreator" size="10" type="textfield"></p>
+  
 <p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(actionCreator());\n'" /></p>
 
 <p><input type="button" class="button btn btn-success" value="dispatch an action event directly" onclick="document.editor.textbox.value+='\nstore.dispatch({ type: &#34;' + document.editor.action.value + '&#34; });\n'" />
