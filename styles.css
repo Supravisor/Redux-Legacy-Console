@@ -7,6 +7,10 @@ td {
   vertical-align: top;
 }
 
+input {
+  padding: 3px;
+}
+
 #buttons, #preview {
   width: 38vw;
 }

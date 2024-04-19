@@ -40,9 +40,9 @@ h1 > a {
   <input placeholder="action name" name="action" size="10" type="textfield">
   <input placeholder="action type" name="actionType" size="10" type="textfield"></p>
   
-<p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction ' + document.editor.actionCreator.value + '() {\n  return ' + document.editor.action.value + ';\n}\n'" /></p>
+<p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction ' + document.editor.actionCreator.value + '() {\n  return ' + document.editor.action.value + ';\n}\n'" />
 
-  <input placeholder="actionCreator" name="actionCreator" size="10" type="textfield">
+  <input placeholder="actionCreator" name="actionCreator" size="10" type="textfield"></p>
   
 <p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(' + document.editor.actionCreator.value + '());\n'" /></p>
 
