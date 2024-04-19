@@ -1,5 +1,5 @@
 
-body {
+body, td:nth-of-type(2) {
   background: #8250df;
 }
 
@@ -8,7 +8,7 @@ td {
 }
 
 input {
-  padding: 6px;
+  padding: 3px;
 }
 
 #buttons, #preview {
