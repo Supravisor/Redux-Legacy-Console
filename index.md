@@ -52,6 +52,12 @@ h1 > a {
 <hr />
 
 <p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'"></p>
+
+<input type="button" class="button blue" value="defaultState" onclick="document.editor.textbox.value+='\nconst defaultState = {\n' + '  '+ defaultStateKey.value + ': ' + defaultStateValue.value + '\n};\n'">
+ <input placeholder="key" name="defaultStateKey" size="10" type="textfield">
+ <input placeholder="value" name="defaultStateValue" size="10" type="textfield">
+
+
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
