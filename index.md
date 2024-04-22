@@ -53,13 +53,13 @@ h1 > a {
 
 <p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'"></p>
 
-<input type="button" class="button blue" value="defaultState" onclick="document.editor.textbox.value+='\nconst defaultState = {\n' + '  '+ defaultStateKey.value + ': ' + defaultStateValue.value + '\n};\n'">
+<input type="button" class="button btn btn-primary" value="defaultState" onclick="document.editor.textbox.value+='\nconst defaultState = {\n' + '  '+ defaultStateKey.value + ': ' + defaultStateValue.value + '\n};\n'">
  <input placeholder="key" name="defaultStateKey" size="10" type="textfield">
  <input placeholder="value" name="defaultStateValue" size="10" type="textfield">
 
 
 
-<input type="button" class="button blue" value="reducer function with argument" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.action.value + ') => {\nif (' + document.editor.action.value + '.type === &#34;' + document.editor.reducerArgument.value + '&#34;) {\n    return {\n     ' + document.editor.defaultStateKey.value + ': ' + document.editor.reducerValue.value + '\n    };\n  } else {\n    return state;\n  }\n};\n'">
+<input type="button" class="button btn btn-primary" value="reducer function with argument" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.action.value + ') => {\nif (' + document.editor.action.value + '.type === &#34;' + document.editor.reducerArgument.value + '&#34;) {\n    return {\n     ' + document.editor.defaultStateKey.value + ': ' + document.editor.reducerValue.value + '\n    };\n  } else {\n    return state;\n  }\n};\n'">
 
         </td>
         <td id="textbox">
