@@ -63,6 +63,8 @@ h1 > a {
   <input placeholder="argument" name="reducerArgument" size="10" type="textfield">
   <input placeholder="value" name="reducerValue" size="10" type="textfield"></article>
 
+<input type="button" class="button blue" value="reducer function with argument" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\nif (' + document.editor.reducerAction.value + '.type === &#34;' + document.editor.reducerArgument.value + '&#34;) {\n    return {\n     ' + document.editor.reducerKey.value + ': ' + document.editor.reducerValue.value + '\n    };\n  } else {\n    return state;\n  }\n};\n'">
+
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
