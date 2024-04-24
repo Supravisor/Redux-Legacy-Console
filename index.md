@@ -52,7 +52,11 @@ h1 > a {
 <hr />
 
 <p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'">
-       <input type="button" class="button blue" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
+       <input type="button" class="button blue" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" />
+  <input placeholder="action name" name="action" size="10" type="textfield">
+  <input placeholder="action type" name="actionType" size="10" type="textfield"></p>
+
+
 
 <p><input type="button" class="button btn btn-primary" value="defaultState" onclick="document.editor.textbox.value+='\nconst defaultState = {\n' + '  '+ defaultStateKey.value + ': ' + defaultStateValue.value + '\n};\n'">
  <input placeholder="key" name="defaultStateKey" size="10" type="textfield">
