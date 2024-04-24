@@ -51,7 +51,7 @@ h1 > a {
 
 <hr />
 
-<p><input type="button" class="button blue" value="define a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" /></p>
+<p><input type="button" class="button blue" value="handle a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" /></p>
   
 <p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst loginAction = () => {\n  return {\n    type: \'LOGIN\'\n  }\n};\n\n'">
        <input type="button" class="button blue" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" />
