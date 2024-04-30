@@ -44,7 +44,7 @@ h1 > a {
 
   <input placeholder="actionCreator" name="actionCreator" size="10" type="textfield"></p>
 
-<p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionCreator.value + '&#34;\n  }\n};\n'" /></p>
+<p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst ' + document.editor.actionCreator.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
   
 <p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(' + document.editor.actionCreator.value + '());\n'" /></p>
 
