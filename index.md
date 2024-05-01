@@ -35,7 +35,7 @@ h1 > a {
 
 <hr />
 
-<p><input type="button" class="button btn btn-primary" value="define a Redux action" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" />
+<p><input type="button" class="button btn btn-primary" value="define a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" />
 
   <input placeholder="action name" name="action" size="10" type="textfield">
   <input placeholder="action type" name="actionType" size="10" type="textfield"></p>
@@ -44,7 +44,7 @@ h1 > a {
 
   <input placeholder="actionCreator" name="actionCreator" size="10" type="textfield"></p>
 
-<p><input type="button" class="button btn btn-primary" value="handle an action" onclick="document.editor.textbox.value+='\nconst ' + document.editor.actionCreator.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
+<p><input type="button" class="button btn btn-primary" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.actionCreator.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
   
 <p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(' + document.editor.actionCreator.value + '());\n'" /></p>
 
