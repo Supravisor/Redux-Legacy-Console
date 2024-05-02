@@ -25,12 +25,9 @@ h1 > a {
       <tr>
         <td id="buttons">
 
-<p><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst ' + document.editor.reducerName.value + ' = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
+<article><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst ' + document.editor.reducerName.value + ' = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
 Name:  <input value="reducer" name="reducerName" size="10" type="textfield" />
-State: <input placeholder="initial" name="state" size="10" type="textfield" /></p>
-
-<p><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value + ') => {\n  return state;\n}\n\n'">
-  <input placeholder="initial" name="reducer" size="10" type="textfield"></p>
+State: <input placeholder="initial" name="state" size="10" type="textfield" /></article>
 
 <p><input type="button" class="button btn btn-primary" value="define store" onclick="document.editor.textbox.value+='const store = Redux.createStore(reducer);\n'" />
    <input type="button" class="btn btn-success" value="define store and create a reducer function" onclick="document.editor.textbox.value+='const store = Redux.createStore(\n  (state = ' + document.editor.reducer.value + ') => state\n);\n\n'" /></p>
