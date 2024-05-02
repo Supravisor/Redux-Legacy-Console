@@ -25,6 +25,9 @@ h1 > a {
       <tr>
         <td id="buttons">
 
+<p><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
+</p>
+
 <p><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst reducer = (state = ' + document.editor.reducer.value + ') => {\n  return state;\n}\n\n'">
   <input placeholder="initial" name="reducer" size="10" type="textfield"></p>
 
