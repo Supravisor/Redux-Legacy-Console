@@ -27,7 +27,7 @@ h1 > a {
 
 <article><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst ' + document.editor.reducerName.value + ' = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
 Name:  <input value="reducer" name="reducerName" size="10" type="textfield" />
-State: <input placeholder="initial" name="state" size="10" type="textfield" /></article>
+State: <input value="initial" name="state" size="10" type="textfield" /></article>
 
 <p><input type="button" class="button btn btn-primary" value="define store" onclick="document.editor.textbox.value+='const store = Redux.createStore(reducer);\n'" />
    <input type="button" class="btn btn-success" value="define store and create a reducer function" onclick="document.editor.textbox.value+='const store = Redux.createStore(\n  (state = ' + document.editor.reducer.value + ') => state\n);\n\n'" /></p>
@@ -38,12 +38,12 @@ State: <input placeholder="initial" name="state" size="10" type="textfield" /></
 
 <p><input type="button" class="button btn btn-primary" value="define a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" />
 
-  <input placeholder="action name" name="action" size="10" type="textfield">
-  <input placeholder="action type" name="actionType" size="10" type="textfield"></p>
+  <input value="action" name="action" size="10" type="textfield">
+  <input value="type" name="actionType" size="10" type="textfield"></p>
   
 <p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction ' + document.editor.actionCreator.value + '() {\n  return ' + document.editor.action.value + ';\n}\n'" />
 
-  <input placeholder="actionCreator" name="actionCreator" size="10" type="textfield"></p>
+  <input value="actionCreator" name="actionCreator" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.actionCreator.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
   
@@ -55,14 +55,14 @@ State: <input placeholder="initial" name="state" size="10" type="textfield" /></
 <hr />
 
 <p><input type="button" class="button btn btn-primary" value="defaultState" onclick="document.editor.textbox.value+='\nconst defaultState = {\n' + '  '+ defaultStateKey.value + ': ' + defaultStateValue.value + '\n};\n'">
- <input placeholder="key" name="defaultStateKey" size="10" type="textfield">
- <input placeholder="value" name="defaultStateValue" size="10" type="textfield"></p>
+ <input value="key" name="defaultStateKey" size="10" type="textfield">
+ <input value="value" name="defaultStateValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="reducer function with argument" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\nif (' + document.editor.reducerAction.value + '.type === &#34;' + document.editor.reducerArgument.value + '&#34;) {\n    return {\n     ' + document.editor.reducerKey.value + ': ' + document.editor.reducerValue.value + '\n    };\n  } else {\n    return state;\n  }\n};\n'">
- <input placeholder="action" name="reducerAction" size="10" type="textfield">
- <input placeholder="argument" name="reducerArgument" size="10" type="textfield">
- <input placeholder="key" name="reducerKey" size="10" type="textfield">
- <input placeholder="value" name="reducerValue" size="10" type="textfield"></p>
+ <input value="action" name="reducerAction" size="10" type="textfield">
+ <input value="argument" name="reducerArgument" size="10" type="textfield">
+ <input value="key" name="reducerKey" size="10" type="textfield">
+ <input value="value" name="reducerValue" size="10" type="textfield"></p>
 
         </td>
         <td id="textbox">
