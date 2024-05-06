@@ -27,7 +27,7 @@ h1 > a {
 
 <article><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst ' + document.editor.reducerName.value + ' = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
 Name:  <input value="reducer" name="reducerName" size="10" type="textfield" />
-State: <input placeholder="initial" name="state" size="10" type="textfield" /></article>
+State: <input value="initial" name="state" size="10" type="textfield" /></article>
 
 <p><input type="button" class="button btn btn-primary" value="define store" onclick="document.editor.textbox.value+='const store = Redux.createStore(reducer);\n'" />
    <input type="button" class="btn btn-success" value="define store and create a reducer function" onclick="document.editor.textbox.value+='const store = Redux.createStore(\n  (state = ' + document.editor.reducer.value + ') => state\n);\n\n'" /></p>
@@ -38,8 +38,8 @@ State: <input placeholder="initial" name="state" size="10" type="textfield" /></
 
 <p><input type="button" class="button btn btn-primary" value="define a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" />
 
-  <input placeholder="action name" name="action" size="10" type="textfield">
-  <input placeholder="action type" name="actionType" size="10" type="textfield"></p>
+  <input value="action" name="action" size="10" type="textfield">
+  <input value="type" name="actionType" size="10" type="textfield"></p>
   
 <p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction ' + document.editor.actionCreator.value + '() {\n  return ' + document.editor.action.value + ';\n}\n'" />
 
