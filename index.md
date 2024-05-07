@@ -59,10 +59,12 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
  <input value="value" name="defaultStateValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="reducer function with argument using if/else statements" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\nif (' + document.editor.reducerAction.value + '.type === &#34;' + document.editor.reducerArgument.value + '&#34;) {\n    return {\n     ' + document.editor.reducerKey.value + ': ' + document.editor.reducerValue.value + '\n    };\n  } else {\n    return state;\n  }\n};\n'"></p>
- <input value="action" name="reducerAction" size="10" type="textfield">
+<p><input value="action" name="reducerAction" size="10" type="textfield">
  <input value="argument" name="reducerArgument" size="10" type="textfield">
  <input value="key" name="reducerKey" size="10" type="textfield">
  <input value="value" name="reducerValue" size="10" type="textfield"></p>
+
+<p><input type="button" class="button btn btn-primary" value="reducer function with argument using switch statement" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\n    switch (action.type) {'"></p>
 
         </td>
         <td id="textbox">
