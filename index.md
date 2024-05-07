@@ -66,7 +66,8 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
 
 <p><input type="button" class="button btn btn-primary" value="reducer function with argument using switch statement" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\n    switch (action.type) {'"></p>
 <p><input type="button" class="button btn btn-primary" value="case" onclick="document.editor.textbox.value+='\n    case &#34;' + document.editor.caseType.value + '&#34;:\n    return {' + document.editor.defaultStateKey.value + ': ' + document.editor.caseProperty.value + '};'">
- <input value="case type" name="caseType" size="10" type="textfield">
+  <input value="case type" name="caseType" size="10" type="textfield">
+  <input value="case property" name="caseProperty" size="10" type="textfield">
 </p>
 
         </td>
