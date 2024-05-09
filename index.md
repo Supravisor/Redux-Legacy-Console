@@ -69,6 +69,7 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
   <input value="case type" name="caseType" size="10" type="textfield">
   <input value="case property" name="caseProperty" size="10" type="textfield"></p>
 <p><input type="button" class="button btn btn-primary" value="default" onclick="document.editor.textbox.value+='\n    default:\n    return defaultState;        \n  }\n};'"></p>
+<p><input type="button" class="button btn btn-primary" value="print case variables" onclick="printCases()"></p>
 
         </td>
         <td id="textbox">
