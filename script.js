@@ -18,9 +18,15 @@ class Input extends React.Component {
       let caseProperty = document.editor.caseProperty.value;
 
       function switchCase() {
-  count++;  
-  text += "\n\nconst case" + count + " = () => {\n  return {\n    type: \"" + document.editor.caseProperty.value + "\";\n  }\n};";
-}
+        count++;  
+        text += "\n\nconst case" + count + " = () => {\n  return {\n    type: \"" + document.editor.caseProperty.value + "\";\n  }\n};";
+      }
+
+      function printCases() {
+        document.editor.textbox.value += text;
+        text = "";
+        count = 0;
+      }
     }
     return /*#__PURE__*/(
       React.createElement("div", { class: "container" }, /*#__PURE__*/
