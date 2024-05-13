@@ -14,6 +14,10 @@ class Input extends React.Component {
   }
 
   render() {
+    {
+      let text = "";
+
+    }
     return /*#__PURE__*/(
       React.createElement("div", { class: "container" }, /*#__PURE__*/
       React.createElement("textarea", { id: "editor",
