@@ -1,7 +1,5 @@
 import ReactDOM from "https://esm.sh/react-dom";
 
-
-
 class Input extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +14,8 @@ class Input extends React.Component {
   render() {
     {
       let text = "";
-
+      let count = 0;
+      let caseProperty = document.editor.caseProperty.value;
     }
     return /*#__PURE__*/(
       React.createElement("div", { class: "container" }, /*#__PURE__*/
