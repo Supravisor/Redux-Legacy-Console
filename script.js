@@ -15,6 +15,7 @@ class Input extends React.Component {
     {
       let text = "";
       let count = 0;
+      let caseProperty = document.editor.caseProperty.value;
     }
     return /*#__PURE__*/(
       React.createElement("div", { class: "container" }, /*#__PURE__*/
