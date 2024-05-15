@@ -13,6 +13,7 @@ import ReactDOM from "https://esm.sh/react-dom";
         document.editor.textbox.value += text;
         text = "";
         count = 0;
+      }
 
 class Input extends React.Component {
   constructor(props) {
