@@ -1,20 +1,5 @@
 import ReactDOM from "https://esm.sh/react-dom";
 
-      let text = "";
-      let count = 0;
-      let caseProperty = document.editor.caseProperty.value;
-
-      function switchCase() {
-        count++;  
-        text += "\n\nconst case" + count + " = () => {\n  return {\n    type: \"" + document.editor.caseProperty.value + "\";\n  }\n};";
-      }
-
-      function printCases() {
-        document.editor.textbox.value += text;
-        text = "";
-        count = 0;
-      }
-
 class Input extends React.Component {
   constructor(props) {
     super(props);
