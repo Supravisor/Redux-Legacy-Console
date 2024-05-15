@@ -79,3 +79,5 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
     </tbody>
   </table>
 </form>
+
+<script src="./script.js"></script>
