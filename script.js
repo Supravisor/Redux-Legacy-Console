@@ -1,18 +1,5 @@
 import ReactDOM from "https://esm.sh/react-dom";
 
-class Input extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      markdown: "" };
-
-  }
-  updateMarkdown(markdown) {
-    this.setState({ markdown });
-  }
-
-  render() {
-    {
       let text = "";
       let count = 0;
       let caseProperty = document.editor.caseProperty.value;
@@ -26,7 +13,19 @@ class Input extends React.Component {
         document.editor.textbox.value += text;
         text = "";
         count = 0;
-      }
+
+class Input extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      markdown: "" };
+
+  }
+  updateMarkdown(markdown) {
+    this.setState({ markdown });
+  }
+
+  render() {
     }
     return /*#__PURE__*/(
       React.createElement("div", { class: "container" }, /*#__PURE__*/
