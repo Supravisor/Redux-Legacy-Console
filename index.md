@@ -65,9 +65,10 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
  <input value="value" name="reducerValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="reducer function with argument using switch statement" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\n    switch (action.type) {'"></p>
-<p><input type="button" class="button btn btn-primary" value="case" onclick="document.editor.textbox.value+='\n    case ' + document.editor.caseValue.value + ':\n      return {\n        ' + document.editor.caseKey.value + ': ' + document.editor.caseProperty.value + '\n      };'; switchCase()">
-  <input value="case type" name="caseKey" size="10" type="textfield">
-  <input value="case property" name="caseValue" size="10" type="textfield"></p>
+<p><input type="button" class="button btn btn-primary" value="case" onclick="document.editor.textbox.value+='\n    case ' + document.editor.caseValue.value.replace(' ', '').toUpperCase() + ':\n      return {\n        ' + document.editor.caseKey.value + ': ' + document.editor.caseProperty.value + '\n      };'; switchCase()">
+ <input value="value" name="caseValue" size="10" type="textfield">
+ <input value="key" name="caseKey" size="10" type="textfield">
+ <input value="property" name="caseProperty" size="10" type="textfield"></p>
 <p><input type="button" class="button btn btn-primary" value="default" onclick="document.editor.textbox.value+='\n    default:\n    return defaultState;        \n  }\n};'"></p>
 <p><input type="button" class="button btn btn-primary" value="print case variables" onclick="printCases()"></p>
 
