@@ -5,7 +5,7 @@ let caseProperty = document.editor.caseProperty.value;
 
 function switchCase() {
   count++;  
-  text += "\n\nconst case" + count + " = () => {\n  return {\n    type: \"" + document.editor.caseProperty.value + "\";\n  }\n};";
+  text += "\n\nconst case" + count + " = () => {\n  return {\n    type: " + document.editor.caseValue.value + ";\n  }\n};";
 }
 
 function printCases() {
