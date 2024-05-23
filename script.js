@@ -11,7 +11,7 @@ function switchCase() {
 }
 
 function printCases() {
-  document.editor.textbox.value += text;
+  document.editor.textbox.value += constant;
   text = "";
   count = 0;
 }
