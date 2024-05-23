@@ -2,7 +2,6 @@
 let case = "";
 let constant = "";
 let count = 0;
-let caseProperty = document.editor.caseProperty.value;
 
 function switchCase() {
   count++;  
@@ -12,7 +11,7 @@ function switchCase() {
 
 function printCases() {
   document.editor.textbox.value += case;
-  text = "";
+  case = "";
   count = 0;
 }
 
