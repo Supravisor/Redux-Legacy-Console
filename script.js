@@ -10,7 +10,7 @@ function switchCase() {
 }
 
 function printCases() {
-  document.editor.textbox.value += case;
+  document.editor.textbox.value += cases;
   cases = "";
   count = 0;
 }
