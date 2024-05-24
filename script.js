@@ -6,7 +6,7 @@ let count = 0;
 function switchCase() {
   count++;  
   case += "\n\nconst case" + count + " = () => {\n  return {\n    type: " + document.textbox.caseValue.value.replace(' ', '').toUpperCase() + ";\n  }\n};";
-  constant += "\nconst " + document.editor.caseValue.value.replace(' ', '').toUpperCase() + " = \"" + document.editor.caseValue.value.replace(' ', '').toUpperCase() + "\";";
+  constant += "\nconst " + document.textbox.caseValue.value.replace(' ', '').toUpperCase() + " = \"" + document.textbox.caseValue.value.replace(' ', '').toUpperCase() + "\";";
 }
 
 function printCases() {
