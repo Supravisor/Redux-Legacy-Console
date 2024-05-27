@@ -4,7 +4,8 @@ let constant = "";
 let count = 0;
 
 function switchCase() {
-  count++;  
+  count++;
+  document.editor.textbox.value+='\n    case ' + document.editor.caseValue.value.replace(' ', '').toUpperCase() + ':\n      return {\n        ' + document.editor.caseKey.value + ': ' + document.editor.caseProperty.value + '\n      };';
   cases += "\n\nconst case" + count + " = () => {\n  return {\n    type: " + document.editor.caseValue.value.replace(' ', '').toUpperCase() + ";\n  }\n};";
   constant += "\nconst " + document.editor.caseValue.value.replace(' ', '').toUpperCase() + " = \"" + document.editor.caseValue.value.replace(' ', '').toUpperCase() + "\";";
 }
