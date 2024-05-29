@@ -1,5 +1,6 @@
 
-let cases = "\nconst reducer = (state = defaultState, " + document.editor.reducerAction.value + ") => {\n\n  switch (action.type) {";
+let casesSwitch = "\nconst reducer = (state = defaultState, " + document.editor.reducerAction.value + ") => {\n\n  switch (action.type) {";
+let cases = "";
 let constant = "";
 let count = 0;
 
