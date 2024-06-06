@@ -56,7 +56,7 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
 
 <p><input type="button" class="button btn btn-primary" value="defaultState" onclick="document.editor.textbox.value+='\nconst defaultState = {\n' + '  '+ defaultStateKey.value + ': ' + defaultStateValue.value + '\n};\n'">
  <input value="key" name="defaultStateKey" size="10" type="textfield">
- <input value="value" name="defaultStateProperty" size="10" type="textfield"></p>
+ <input value="value" name="defaultStateValue" size="10" type="textfield"></p>
 
 <!-- reducer functions -->
 
