@@ -12,10 +12,10 @@ function switchCase() {
 }
 
 function handleMultipleActions() {
+  document.editor.textbox.value += "\n    default:\n    return defaultState;        \n  }\n}";
   document.editor.textbox.value += cases;
   cases = "";
   count = 0;
-  document.editor.textbox.value += "\n    default:\n    return defaultState;        \n  }\n}";
 }
 
 function printConstant() {
