@@ -11,7 +11,7 @@ function switchCase() {
   constant += "\nconst " + document.editor.caseAction.value.replace(' ', '').toUpperCase() + " = \"" + document.editor.caseAction.value.replace(' ', '').toUpperCase() + "\";";
 }
 
-function default() {
+function handleMultipleActions() {
   document.editor.textbox.value += cases;
   cases = "";
   count = 0;
