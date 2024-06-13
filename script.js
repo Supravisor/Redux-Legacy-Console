@@ -12,6 +12,7 @@ function switchCase() {
 }
 
 function handleMultipleActions() {
+  document.editor.textbox.value = '\nconst defaultState = {\n  ' + document.editor.defaultStateKey.value + ': ' + document.editor.defaultStateValue.value + '\n};\n';
   document.editor.textbox.value += "\n    default:\n    return defaultState;        \n  }\n}";
   document.editor.textbox.value += cases;
   cases = "";
