@@ -20,7 +20,7 @@ function handleMultipleActions() {
   document.editor.textbox.value += casesSwitch;
   document.editor.textbox.value += cases;
   document.editor.textbox.value += "\n    default:\n    return defaultState;\n  }\n};";
-  document.editor.textbox.value += "\n\nRedux.createStore(reducer);";
+  document.editor.textbox.value += "\n\nconst store = Redux.createStore(reducer);";
   document.editor.textbox.value += caseVariable;
   cases = "";
   caseVariable = "";
