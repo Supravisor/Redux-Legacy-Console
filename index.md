@@ -69,7 +69,7 @@ State: <input value="initial" name="state" size="10" type="textfield" /></articl
 <p><input type="button" class="button btn btn-primary" value="case" onclick="switchCase()">
  <input value="action" name="caseAction" size="10" type="textfield">
  <input value="value" name="caseValue" size="10" type="textfield"></p>
-<p><input type="button" class="button btn btn-primary" value="default" onclick="handleMultipleActions()"></p>
+<p><input type="button" class="button btn btn-success" value="default" onclick="handleMultipleActions()"></p>
 
         </td>
         <td id="textbox">
