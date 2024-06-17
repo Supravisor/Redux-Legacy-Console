@@ -1,5 +1,5 @@
 
-let casesSwitch = "\nconst reducer = (state = defaultState, " + document.editor.reducerAction.value + ") => {\n\n  switch (action.type) {";
+let casesSwitch = "\nconst reducer = (state = defaultState, " + document.editor.reducerAction.value + ") => {\n  switch (action.type) {";
 let cases = "";
 let caseVariable = "";
 let constant = "";
@@ -20,6 +20,7 @@ function handleMultipleActions() {
   document.editor.textbox.value += casesSwitch;
   document.editor.textbox.value += cases;
   document.editor.textbox.value += "\n    default:\n    return defaultState;        \n  }\n}";
+  document.editor.textbox.value += "\nRedux.createStore(reducer);";
   document.editor.textbox.value += caseVariable;
   cases = "";
   caseVariable = "";
