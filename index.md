@@ -78,7 +78,7 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 <!-- handle multiple reducers -->
 
 <p><input type="button" class="button btn btn-primary" value="handle multiple reducers" onclick="document.editor.textbox.value+='\nconst rootReducer = Redux.combineReducers({'"></p>
-
+<p><input type="button" class="button btn btn-primary" value="@ reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value + ','"></p>
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
