@@ -73,6 +73,12 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 
 <p><input type="button" class="button btn btn-primary" value="register a store listener" onclick="document.editor.textbox.value+='\nstore.dispatch({type: ' + document.editor.storeListener.value.toUpperCase() + '});'"></p>
 
+<hr />
+
+<!-- handle multiple reducers -->
+
+<p><input type="button" class="button btn btn-primary" value="handle multiple reducers" onclick="document.editor.textbox.value+='\nconst rootReducer = Redux.combineReducers({'"></p>
+
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
