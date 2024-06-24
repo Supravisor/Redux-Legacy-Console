@@ -8,11 +8,10 @@ td {
 }
 
 input:not([type="button"]) {
-  margin-top: -3px;
-  margin-left: 3px;
+  margin-top: 3px;
 }
 
-input[type="button"] {
+input {
   margin-left: 3px;
 }
 
