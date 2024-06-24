@@ -7,9 +7,12 @@ td {
   vertical-align: top;
 }
 
+input:not([type="button"]) {
+  margin-top: 3px;
+}
+
 input {
-  margin-top: -3px;
-  padding: 3px;
+  margin-left: 3px;
 }
 
 #buttons, #preview {
