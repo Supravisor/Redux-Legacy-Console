@@ -8,7 +8,8 @@ td {
 }
 
 input {
-  margin: 3px;
+  margin-top: -3px;
+  margin-left: 3px;
 //  padding: 3px;
 }
 
