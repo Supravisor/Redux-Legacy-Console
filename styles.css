@@ -8,8 +8,8 @@ td {
 }
 
 input {
-  margin-top: -3px;
-  padding: 3px;
+  margin: 3px;
+//  padding: 3px;
 }
 
 #buttons, #preview {
