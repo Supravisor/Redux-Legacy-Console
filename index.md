@@ -74,8 +74,6 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 
 <p><input type="button" class="button btn btn-success" value="default" onclick="handleMultipleActions()"></p>
 
-<p><input type="button" class="button btn btn-primary" value="register a store listener" onclick="document.editor.textbox.value+='\nstore.dispatch({type: ' + document.editor.storeListener.value.toUpperCase() + '});'"></p>
-
 <hr />
 
 <!-- subscribe listener function -->
