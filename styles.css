@@ -9,7 +9,8 @@ td {
 
 input {
   padding: 2px 3px;
-//  margin-top: 3px;
+  margin-left: 6px;
+  height: 1em;
 }
 
 #buttons, #preview {
