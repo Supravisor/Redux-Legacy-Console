@@ -8,6 +8,7 @@ td {
 }
 
 input:not([type="button"]) {
+  padding: 6px 12px;
   margin-top: 3px;
 }
 
