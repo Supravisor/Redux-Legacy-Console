@@ -81,7 +81,7 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 <p><input type="button" class="button btn btn-primary" value="@ reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value + ','"><input type="button" class="button btn btn-primary" value="last reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value"></p>
 <p><input value="key" name="multipleReducerKey" size="10" type="textfield">
   <input value="reducer" name="multipleReducerValue" size="10" type="textfield"></p>
-<p><input type="button" class="button btn btn-primary" value="close reducer" onclick="document.editor.textbox.value+='\n});\n\n'"></p>
+<p><input type="button" class="button btn btn-primary" value="close reducer" onclick="document.editor.textbox.value+='\n});\n\nconst store = Redux.createStore(rootReducer);\n'"></p>
 
         </td>
         <td id="textbox">
