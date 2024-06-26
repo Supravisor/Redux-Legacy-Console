@@ -61,14 +61,17 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 <!-- reducer functions -->
 
 <p><input type="button" class="button btn btn-success" value="handle a single action" onclick="document.editor.textbox.value='\nconst defaultState = {\n  ' + document.editor.defaultStateKey.value + ': ' + document.editor.defaultStateValue.value + '\n};\n\nconst ' + document.editor.reducerArgument.value.replace(' ', '').toUpperCase() + ' = &#34;' + document.editor.reducerArgument.value.replace(' ', '').toUpperCase() + '&#34;;\n\nconst reducer = (state = defaultState, action) => {\n  if (action.type === ' + document.editor.reducerArgument.value.toUpperCase() + ') {\n    return {\n     ' + document.editor.defaultStateKey.value + ': ' + document.editor.reducerValue.value + '\n    };\n  } else {\n    return state;\n  }\n};\n\nconst store = Redux.createStore(reducer);\n\nconst ' + document.editor.reducerAction.value + ' = () => {\n  return {\n    type: '+ document.editor.reducerArgument.value.toUpperCase() + '\n  }\n};'"></p>
+
 <p><input value="action" name="reducerAction" size="10" type="textfield">
  <input value="argument" name="reducerArgument" size="10" type="textfield">
  <input value="value" name="reducerValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="handle multiple actions" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\n    switch (action.type) {'"></p>
+
 <p><input type="button" class="button btn btn-primary" value="@ case" onclick="switchCase()">
  <input value="action" name="caseAction" size="10" type="textfield">
  <input value="value" name="caseValue" size="10" type="textfield"></p>
+
 <p><input type="button" class="button btn btn-success" value="default" onclick="handleMultipleActions()"></p>
 
 <p><input type="button" class="button btn btn-primary" value="register a store listener" onclick="document.editor.textbox.value+='\nstore.dispatch({type: ' + document.editor.storeListener.value.toUpperCase() + '});'"></p>
@@ -78,10 +81,13 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 <!-- handle multiple reducers -->
 
 <p><input type="button" class="button btn btn-primary" value="handle multiple reducers" onclick="document.editor.textbox.value+='\nconst rootReducer = Redux.combineReducers({'"></p>
+
 <p><input type="button" class="button btn btn-primary" value="@ reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value + ','"><input type="button" class="button btn btn-primary" value="last reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value"></p>
+
 <p><input value="key" name="multipleReducerKey" size="10" type="textfield">
   <input value="reducer" name="multipleReducerValue" size="10" type="textfield"></p>
-<p><input type="button" class="button btn btn-primary" value="close reducer" onclick="document.editor.textbox.value+='\n});\n\nconst store = Redux.createStore(rootReducer);\n'"></p>
+
+<p><input type="button" class="button btn btn-success" value="close reducers" onclick="document.editor.textbox.value+='\n});\n\nconst store = Redux.createStore(rootReducer);\n'"></p>
 
         </td>
         <td id="textbox">
