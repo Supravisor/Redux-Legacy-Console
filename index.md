@@ -78,6 +78,12 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 
 <hr />
 
+<!-- subscribe listener function -->
+
+<p><input type="button" class="button btn btn-primary" value="subscribe a listener function" onclick="document.editor.textbox.value+='\nstore.subscribe(() => {' + document.editor.storeListenerFunction.value + '});\n'"></p>
+
+<hr />
+
 <!-- handle multiple reducers -->
 
 <p><input type="button" class="button btn btn-primary" value="handle multiple reducers" onclick="document.editor.textbox.value+='\nconst rootReducer = Redux.combineReducers({'"></p>
