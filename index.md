@@ -17,6 +17,10 @@ h1 > a {
   border: none;
 }
 
+input:not([type:"button"]) {
+  border-color: black;
+}
+
 </style>
 
 <form name="editor">
