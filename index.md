@@ -38,12 +38,12 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <p><input type="button" class="button btn btn-primary" value="define a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" />
 
-  <input value="action" name="action" size="10" type="textfield">
-  <input value="type" name="actionType" size="10" type="textfield"></p>
+  <input class="btn" value="action" name="action" size="10" type="textfield">
+  <input class="btn" value="type" name="actionType" size="10" type="textfield"></p>
   
 <p><input type="button" class="button btn btn-primary" value="define an action creator" onclick="document.editor.textbox.value+='\nfunction ' + document.editor.actionCreator.value + '() {\n  return ' + document.editor.action.value + ';\n}\n'" />
 
-  <input value="actionCreator" name="actionCreator" size="10" type="textfield"></p>
+  <input class="btn" value="actionCreator" name="actionCreator" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.actionCreator.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
   
@@ -86,9 +86,11 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <p><input type="button" class="button btn btn-primary" value="handle multiple reducers" onclick="document.editor.textbox.value+='\nconst rootReducer = Redux.combineReducers({'"></p>
 
-<p><input type="button" class="button btn btn-primary" value="@ reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value + ','"><input type="button" class="button btn btn-primary" value="last reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value"></p>
+<p><input type="button" class="button btn btn-primary" value="@ reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value + ','">
 
-<p><input value="key" name="multipleReducerKey" size="10" type="textfield">
+<input type="button" class="button btn btn-primary" value="last reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value"></p>
+
+<p><input class="btn" value="key" name="multipleReducerKey" size="10" type="textfield">
   <input class="btn" value="reducer" name="multipleReducerValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-success" value="close reducers" onclick="document.editor.textbox.value+='\n});\n\nconst store = Redux.createStore(rootReducer);\n'"></p>
