@@ -69,8 +69,8 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 <p><input type="button" class="button btn btn-primary" value="handle multiple actions" onclick="document.editor.textbox.value+='\nconst reducer = (state = defaultState, ' + document.editor.reducerAction.value + ') => {\n    switch (action.type) {'"></p>
 
 <p><input type="button" class="button btn btn-primary" value="@ case" onclick="switchCase()">
- <input value="action" name="caseAction" size="10" type="textfield">
- <input value="value" name="caseValue" size="10" type="textfield"></p>
+ <input class="btn" value="action" name="caseAction" size="10" type="textfield">
+ <input class="btn" value="value" name="caseValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-success" value="default" onclick="handleMultipleActions()"></p>
 
@@ -89,7 +89,7 @@ State: <input value="initial" name="state" size="10" type="textfield" /></p>
 <p><input type="button" class="button btn btn-primary" value="@ reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value + ','"><input type="button" class="button btn btn-primary" value="last reducer" onclick="document.editor.textbox.value+='\n  ' + document.editor.multipleReducerKey.value + ': ' + document.editor.multipleReducerValue.value"></p>
 
 <p><input value="key" name="multipleReducerKey" size="10" type="textfield">
-  <input value="reducer" name="multipleReducerValue" size="10" type="textfield"></p>
+  <input class="btn" value="reducer" name="multipleReducerValue" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-success" value="close reducers" onclick="document.editor.textbox.value+='\n});\n\nconst store = Redux.createStore(rootReducer);\n'"></p>
 
