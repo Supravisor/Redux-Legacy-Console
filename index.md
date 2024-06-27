@@ -82,7 +82,8 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <!-- subscribe listener function -->
 
-<p><input type="button" class="button btn btn-primary" value="subscribe a listener function" onclick="document.editor.textbox.value+='\nstore.subscribe(() => {' + document.editor.storeListenerFunction.value + '});\n'"></p>
+<p><input type="button" class="button btn btn-primary" value="subscribe a listener function" onclick="document.editor.textbox.value+='\nstore.subscribe(() => {' + document.editor.storeListenerFunction.value + '});\n'">
+  <input value="function" name="storeListenerFunction" size="10" type="textfield"></p>
 
 <hr />
 
