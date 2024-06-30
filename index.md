@@ -53,6 +53,8 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
   
 <p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(' + document.editor.actionCreator.value + '());\n'" /></p>
 
+<p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+=document.editor.data.value === '' ? '\nstore.dispatch(' + document.editor.actionCreator.value + '());\n' : '\nstore.dispatch(' + document.editor.actionCreator.value + '(&#34;' + document.editor.data.value + '&#34;));\n'" /></p>
+
 <p><input type="button" class="button btn btn-success" value="dispatch an action event directly" onclick="document.editor.textbox.value+='\nstore.dispatch({ type: &#34;' + document.editor.actionType.value + '&#34; });\n'" />
 </p>
 
