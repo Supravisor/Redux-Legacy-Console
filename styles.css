@@ -10,7 +10,10 @@ td {
 input {
   padding: 2px 3px;
   margin-left: 6px;
-//  height: 48px;
+}
+
+input:not(.btn-primary, .btn-success) {
+  border: 1px solid black;
 }
 
 #buttons, #preview {
