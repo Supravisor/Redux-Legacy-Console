@@ -40,6 +40,8 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <hr />
 
+<!-- define a Redux action -->
+
 <p><input type="button" class="button btn btn-primary" value="define a Redux action I" onclick="document.editor.textbox.value+='\nconst ' + document.editor.action.value + ' = {\n  type: &#34;' + document.editor.actionType.value + '&#34;\n}\n'" />
 
   <input class="btn" value="action" name="action" size="10" type="textfield">
@@ -51,7 +53,8 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <p><input type="button" class="button btn btn-primary" value="define a Redux action II" onclick="document.editor.textbox.value+='\nconst ' + document.editor.actionCreator.value + ' = () => {\n  return {\r    type: &#34;' + document.editor.actionType.value + '&#34;\n  }\n};\n'" /></p>
   
-<p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+='\nstore.dispatch(' + document.editor.actionCreator.value + '());\n'" /></p>
+<p><input type="button" class="button btn btn-primary" value="dispatch an action event indirectly" onclick="document.editor.textbox.value+=document.editor.data.value === '' ? '\nstore.dispatch(' + document.editor.actionCreator.value + '());\n' : '\nstore.dispatch(' + document.editor.actionCreator.value + '(&#34;' + document.editor.data.value + '&#34;));\n'" />
+  <input class="btn" name="data" placeholder="data" size="10" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-success" value="dispatch an action event directly" onclick="document.editor.textbox.value+='\nstore.dispatch({ type: &#34;' + document.editor.actionType.value + '&#34; });\n'" />
 </p>
