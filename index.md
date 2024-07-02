@@ -103,6 +103,12 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <p><input type="button" class="button btn btn-success" value="close reducers" onclick="document.editor.textbox.value+='\n});\n\nconst store = Redux.createStore(rootReducer);\n'"></p>
 
+<hr />
+
+<!-- handle asynchronous actions -->
+
+<p><input value="REQUEST" name="request" size="10" type="textfield"></p>
+
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
