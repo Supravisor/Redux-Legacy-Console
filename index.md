@@ -112,7 +112,7 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
   <input class="btn" value="DATA" name="datum" size="10" type="textfield">
   <input class="btn" value="array" name="array" size="10" type="textfield"></p>
 
-<p><input type="button" class="button btn btn-primary" value="handle async" onclick="document.editor.textbox.value+='\nconst ' + document.editor.request.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.request.value + '_' + document.editor.datum.value + '&#34;;'" /></p>
+<p><input type="button" class="button btn btn-primary" value="handle async" onclick="document.editor.textbox.value+='\nconst ' + document.editor.request.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.request.value + '_' + document.editor.datum.value + '&#34;;\nconst ' + document.editor.receive.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.receive.value + '_' + document.editor.datum.value + '&#34;;'" /></p>
 
         </td>
         <td id="textbox">
