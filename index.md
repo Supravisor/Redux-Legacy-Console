@@ -107,7 +107,10 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
 
 <!-- handle asynchronous actions -->
 
-<p><input value="REQUEST" name="request" size="10" type="textfield"></p>
+<p><input class="btn" value="REQUEST" name="request" size="10" type="textfield">
+  <input class="btn" value="RECEIVE" name="receive" size="10" type="textfield">
+  <input class="btn" value="DATA" name="datum" size="10" type="textfield">
+  <input class="btn" value="array" name="array" size="10" type="textfield"></p>
 
         </td>
         <td id="textbox">
