@@ -40,5 +40,5 @@ input:not(.btn-primary, .btn-success) {
   height: 60vh;
   margin-top: -6px;
   margin-right: -13px;
-  background: SlateGrey;
+  background: rgb(150, 150, 150);
 }
