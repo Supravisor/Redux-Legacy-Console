@@ -112,7 +112,7 @@ State: <input class="btn" value="initial" name="state" size="10" type="textfield
   <input class="btn" value="DATA" name="datum" size="10" type="textfield">
   <input class="btn" value="array" name="array" size="10" type="textfield"></p>
 
-<p><input type="button" class="button btn btn-primary" value="handle async" onclick="document.editor.textbox.value+='\nconst ' + document.editor.request.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.request.value + '_' + document.editor.datum.value + '&#34;;\nconst ' + document.editor.receive.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.receive.value + '_' + document.editor.datum.value + '&#34;;'" /></p>
+<p><input type="button" class="button btn btn-primary" value="handle async" onclick="document.editor.textbox.value+='\nconst ' + document.editor.request.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.request.value + '_' + document.editor.datum.value + '&#34;;\nconst ' + document.editor.receive.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.receive.value + '_' + document.editor.datum.value + '&#34;;\n\nconst ' + document.editor.request.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + ' = () => { return {type: ' + document.editor.request.value + '_' + document.editor.datum.value + '} }'" /></p>
 
         </td>
         <td id="textbox">
