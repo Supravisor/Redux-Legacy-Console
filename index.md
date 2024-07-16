@@ -21,17 +21,6 @@ input:not([type:"button"]) {
   border-color: black;
 }
 
-.primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-}
-
-.primary:active {
-    color: #337ab7;
-    background-color: #fff;
-}
-
 </style>
 
 <form name="editor">
