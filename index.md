@@ -21,6 +21,11 @@ input:not([type:"button"]) {
   border-color: black;
 }
 
+.btn-primary:active {
+    color: #337ab7;
+    background-color: #fff;
+}
+
 </style>
 
 <form name="editor">
