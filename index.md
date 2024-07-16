@@ -21,6 +21,11 @@ input:not([type:"button"]) {
   border-color: black;
 }
 
+.btn-primary:active {
+    color: #337ab7;
+    background-color: #fff;
+}
+
 </style>
 
 <form name="editor">
@@ -110,7 +115,7 @@ input:not([type:"button"]) {
 <p><input class="btn" value="REQUEST" name="request" size="10" type="textfield">
   <input class="btn" value="RECEIVE" name="receive" size="10" type="textfield">
   <input class="btn" value="DATA" name="datum" size="10" type="textfield">
-  <input value="&#34;Amy&#34;, &#34;Bob&#34;, &#34;Chris&#34;" name="array" size="20" type="textfield"></p>
+  <input class="btn" value="&#34;Amy&#34;, &#34;Bob&#34;, &#34;Chris&#34;" name="array" size="20" type="textfield"></p>
 
 <p><input type="button" class="button btn btn-primary" value="handle async" onclick="document.editor.textbox.value+='\nconst ' + document.editor.request.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.request.value + '_' + document.editor.datum.value + '&#34;;\nconst ' + document.editor.receive.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.receive.value + '_' + document.editor.datum.value + '&#34;;\n\nconst ' + document.editor.request.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + ' = () => { return {type: ' + document.editor.request.value + '_' + document.editor.datum.value + '} }\nconst ' + document.editor.receive.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + ' = (data) => { return {type: ' + document.editor.receive.value + '_' + document.editor.datum.value + ', users: data.users} }\n\nconst handleAsync = () => {\n  return function(dispatch) {\n    dispatch(' + document.editor.request.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + '());\n    setTimeout(function() {\n      let data = {\n        users: [' + document.editor.array.value + ']\n      }\n      dispatch(' + document.editor.receive.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + '(data));\n    }, 2500);\n  }\n};\n\nconst defaultState = {\n  fetching: false,\n  users: []\n};\n\nconst asyncDataReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    ' + document.editor.request.value + '_' + document.editor.datum.value + ':\n      return {\n        fetching: true,\n        users: []\n      }\n'" /></p>
 
