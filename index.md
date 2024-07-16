@@ -21,7 +21,7 @@ input:not([type:"button"]) {
   border-color: black;
 }
 
-.btn-primary:active {
+.primary:active {
     color: #337ab7;
     background-color: #fff;
 }
@@ -34,7 +34,7 @@ input:not([type:"button"]) {
       <tr>
         <td id="buttons">
 
-<p><input type="button" class="btn btn-primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst ' + document.editor.reducerName.value + ' = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
+<p><input type="button" class="btn primary" value="create a reducer function" onclick="document.editor.textbox.value+='\nconst ' + document.editor.reducerName.value + ' = (state = ' + document.editor.state.value + ') => {\n  return state;\n}\n\n'" />
   <input class="btn" value="reducer" name="reducerName" size="10" type="textfield" />
   <input class="btn" value="initial" name="state" size="10" type="textfield" /></p>
 
