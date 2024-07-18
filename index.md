@@ -118,7 +118,7 @@ input:not([type:"button"]) {
 
 <!-- build a counter -->
 
-<p><input type="button" class="btn btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+=''"></p>
+<p><input type="button" class="btn btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+='\nconst INCREMENT = 1;\nconst DECREMENT = -1;\n\nconst counterReducer = (state = 0, action) => {\n  switch (action.type) {\n    case INCREMENT:\n    return state + INCREMENT;\n    case DECREMENT:\n    return state + DECREMENT;\n    default:\n    return state;\n  }\n};\n'"></p>
 
         </td>
         <td id="textbox">
