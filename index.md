@@ -120,8 +120,6 @@ input:not([type:"button"]) {
 
 <p><input type="button" class="btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+='\nconst INCREMENT = 1;\nconst DECREMENT = -1;\n\nconst counterReducer = (state = 0, action) => {\n  switch (action.type) {\n    case INCREMENT:\n    return state + INCREMENT;\n    case DECREMENT:\n    return state + DECREMENT;\n    default:\n    return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);\n'"></p>
 
-<hr />
-
 <!-- build a to do -->
 
 <p><input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:'"></p>
