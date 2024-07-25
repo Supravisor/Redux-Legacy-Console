@@ -109,8 +109,9 @@ input:not([type:"button"]) {
 
 <p><input class="btn" value="REQUEST" name="request" size="10" type="textfield">
   <input class="btn" value="RECEIVE" name="receive" size="10" type="textfield">
-  <input class="btn" value="DATA" name="datum" size="10" type="textfield">
-  <input class="btn" value="&#34;Amy&#34;, &#34;Bob&#34;, &#34;Chris&#34;" name="array" size="20" type="textfield"></p>
+  <input class="btn" value="DATA" name="datum" size="10" type="textfield"></p>
+
+<p><input class="btn" value="&#34;Amy&#34;, &#34;Bob&#34;, &#34;Chris&#34;" name="array" size="20" type="textfield"></p>
 
 <p><input type="button" class="btn btn-primary" value="handle asynchronous actions" onclick="document.editor.textbox.value+='\nconst ' + document.editor.request.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.request.value + '_' + document.editor.datum.value + '&#34;;\nconst ' + document.editor.receive.value + '_' + document.editor.datum.value + ' = &#34;' + document.editor.receive.value + '_' + document.editor.datum.value + '&#34;;\n\nconst ' + document.editor.request.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + ' = () => { return {type: ' + document.editor.request.value + '_' + document.editor.datum.value + '} }\nconst ' + document.editor.receive.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + ' = (data) => { return {type: ' + document.editor.receive.value + '_' + document.editor.datum.value + ', users: data.users} }\n\nconst handleAsync = () => {\n  return function(dispatch) {\n    dispatch(' + document.editor.request.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + '());\n    setTimeout(function() {\n      let data = {\n        users: [' + document.editor.array.value + ']\n      }\n      dispatch(' + document.editor.receive.value.toLowerCase() + document.editor.datum.value[0] + document.editor.datum.value.slice(1, Infinity).toLowerCase() + '(data));\n    }, 2500);\n  }\n};\n\nconst defaultState = {\n  fetching: false,\n  users: []\n};\n\nconst asyncDataReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    case ' + document.editor.request.value + '_' + document.editor.datum.value + ':\n      return {\n        fetching: true,\n        users: []\n      }\n\n    case ' + document.editor.receive.value + '_' + document.editor.datum.value + ':\n      return {\n        fetching: false,\n        users: action.users\n      }\n    default:\n      return state;\n  }\n};\n\nconst store = Redux.createStore(\n  asyncDataReducer,\n  Redux.applyMiddleware(ReduxThunk.default)\n);\n'" /></p>
 
@@ -118,13 +119,11 @@ input:not([type:"button"]) {
 
 <!-- build a counter -->
 
-<p><input type="button" class="btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+='\nconst INCREMENT = 1;\nconst DECREMENT = -1;\n\nconst counterReducer = (state = 0, action) => {\n  switch (action.type) {\n    case INCREMENT:\n    return state + INCREMENT;\n    case DECREMENT:\n    return state + DECREMENT;\n    default:\n    return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);\n'"></p>
-
-<hr />
+<p><input type="button" class="btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+='\nconst INCREMENT = 1;\nconst DECREMENT = -1;\n\nconst counterReducer = (state = 0, action) => {\n  switch (action.type) {\n    case INCREMENT:\n    return state + INCREMENT;\n    case DECREMENT:\n    return state + DECREMENT;\n    default:\n    return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);\n'">
 
 <!-- build a to do -->
 
-<p><input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];'"></p>
+<input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:'"></p>
 
         </td>
         <td id="textbox">
