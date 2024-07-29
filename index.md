@@ -123,7 +123,7 @@ input:not([type:"button"]) {
 
 <!-- build a to do -->
 
-<input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:'"></p>
+<input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n    return state.concat(action.todo);\n      \n      return\n    default:\n      return state;\n  }\n};'"></p>
 
         </td>
         <td id="textbox">
