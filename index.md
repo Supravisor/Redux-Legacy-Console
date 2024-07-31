@@ -125,6 +125,10 @@ input:not([type:"button"]) {
 
 <input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n    return state.concat(action.todo);\n      \n      return\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);\n'"></p>
 
+<!-- return new state for to do -->
+
+<p><input type="button" class="btn btn-primary" value="return new state for to do" onclick="document.editor.textbox.value+=''"></p>
+
         </td>
         <td id="textbox">
           <textarea id="preview" name="textbox"></textarea>
