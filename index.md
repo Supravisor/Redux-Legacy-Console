@@ -127,7 +127,7 @@ input:not([type:"button"]) {
 
 <!-- return new state for to do -->
 
-<input type="button" class="btn btn-primary" value="return new state for to do" onclick="document.editor.textbox.value+=''"></p>
+<input type="button" class="btn btn-primary" value="return new state for to do" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [&#34;Do not mutate state!&#34;], action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n            return [...state, action.todo];\n    default:\n      return state;\n  }\n};\n'"></p>
 
         </td>
         <td id="textbox">
