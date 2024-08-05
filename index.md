@@ -131,7 +131,7 @@ input:not([type:"button"]) {
 
 <!-- remove an item from to do -->
 
-<p><input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+=''"></p>
+<p><input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n'"></p>
 
         </td>
         <td id="textbox">
