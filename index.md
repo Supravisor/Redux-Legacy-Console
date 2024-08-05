@@ -127,11 +127,11 @@ input:not([type:"button"]) {
 
 <!-- add an item for to do -->
 
-<input type="button" class="btn btn-primary" value="add an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [&#34;Do not mutate state!&#34;], action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      return [...state, action.todo];\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);'">
+<input type="button" class="btn btn-primary" value="add an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [&#34;Do not mutate state!&#34;], action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      return [...state, action.todo];\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);'"></p>
 
 <!-- remove an item from to do -->
 
-<input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+=''"></p>
+<p><input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+=''"></p>
 
         </td>
         <td id="textbox">
