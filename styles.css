@@ -42,3 +42,7 @@ input:not(.btn-primary, .btn-success) {
   margin-right: -13px;
   background: rgb(150, 150, 150);
 }
+
+.aside {
+  display: inline-block;
+}
