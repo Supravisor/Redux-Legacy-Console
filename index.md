@@ -117,7 +117,7 @@ input:not([type:"button"]) {
 
 <hr />
 
-  <table>
+  <table id="table">
     <tbody>
       <tr>
         <td>Array:</td>
