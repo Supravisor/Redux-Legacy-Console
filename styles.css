@@ -7,10 +7,6 @@ td {
   vertical-align: top;
 }
 
-#table {
-  background: transparent;
-}
-
 input {
   padding: 2px 3px;
   margin-left: 6px;
@@ -45,4 +41,21 @@ input:not(.btn-primary, .btn-success) {
   margin-top: -6px;
   margin-right: -13px;
   background: rgb(150, 150, 150);
+}
+
+aside {
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  width: 15%;
+}
+
+.middle, .right {
+  width: 40%;
+}
+
+.right {
+  float: right;
 }
