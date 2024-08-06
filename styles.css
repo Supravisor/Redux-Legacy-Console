@@ -7,6 +7,10 @@ td {
   vertical-align: top;
 }
 
+#table {
+  background: transparent;
+}
+
 input {
   padding: 2px 3px;
   margin-left: 6px;
