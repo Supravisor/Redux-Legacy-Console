@@ -117,7 +117,6 @@ input:not([type:"button"]) {
 
 <hr />
 
-<div class="aside">
 <aside class="left">Array:</aside>
 <aside class="right">
 <!-- build a counter -->
@@ -138,7 +137,7 @@ input:not([type:"button"]) {
 
 <input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n'">
 </aside>
-</div>
+
 
         </td>
         <td id="textbox">
