@@ -21,6 +21,11 @@ input:not([type:"button"]) {
   border-color: black;
 }
 
+.table {
+  padding: 0;
+  background: transparent;  
+}
+
 </style>
 
 <form name="editor">
@@ -117,7 +122,7 @@ input:not([type:"button"]) {
 
 <hr />
 
-  <table>
+  <table class="table">
     <tbody>
       <tr>
         <td>Array:</td>
