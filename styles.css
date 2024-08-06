@@ -46,3 +46,11 @@ input:not(.btn-primary, .btn-success) {
 .aside {
   display: inline-block;
 }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
