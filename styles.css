@@ -1,10 +1,15 @@
 
-body, td:nth-of-type(2):not(#table < td:nth-of-type(2)) {
+body, td:nth-of-type(2) {
   background: #8250df;
 }
 
+
 td {
   vertical-align: top;
+}
+
+#table {
+  background: transparent;
 }
 
 input {
