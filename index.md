@@ -117,10 +117,28 @@ input:not([type:"button"]) {
 
 <hr />
 
+  <table>
+    <tbody>
+      <tr>
+        <td>Array:</td>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <td>
 <!-- build a counter -->
 
-<p>Array: <input type="button" class="btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+='\nconst INCREMENT = 1;\nconst DECREMENT = -1;\n\nconst counterReducer = (state = 0, action) => {\n  switch (action.type) {\n    case INCREMENT:\n    return state + INCREMENT;\n    case DECREMENT:\n    return state + DECREMENT;\n    default:\n    return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);\n'">
+<input type="button" class="btn btn-primary" value="build a counter" onclick="document.editor.textbox.value+='\nconst INCREMENT = 1;\nconst DECREMENT = -1;\n\nconst counterReducer = (state = 0, action) => {\n  switch (action.type) {\n    case INCREMENT:\n    return state + INCREMENT;\n    case DECREMENT:\n    return state + DECREMENT;\n    default:\n    return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);\n'">
 
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+   </table>
+    
 <!-- build a to do -->
 
 <input type="button" class="btn btn-primary" value="build a to do" onclick="document.editor.textbox.value+='\nconst ADD_TO_DO = &#34;ADD_TO_DO&#34;;\n\nconst todos = [\n  &#34;Go to the store&#34;,\n  &#34;Clean the house&#34;,\n  &#34;Cook dinner&#34;,\n  &#34;Learn to code&#34;,\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      return state.concat(action.todo);\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);\n'">
@@ -131,7 +149,7 @@ input:not([type:"button"]) {
 
 <!-- remove an item from to do -->
 
-<p><input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+=''"></p>
+<p><input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n'"></p>
 
         </td>
         <td id="textbox">
