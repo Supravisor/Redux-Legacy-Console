@@ -1,5 +1,5 @@
 
-body, td:nth-of-type(2) {
+body, td:nth-of-type(2):not(#table) {
   background: #8250df;
 }
 
