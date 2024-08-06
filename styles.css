@@ -53,8 +53,11 @@ aside {
 }
 
 .middle, .right {
-  padding: 2px 3px;
   width: 40%;
+}
+
+.middle input, .right input {
+  padding: 2px 3px;
 }
 
 .right {
