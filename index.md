@@ -137,7 +137,7 @@ input:not([type:"button"]) {
 
   <!-- remove an item from to do -->
 
-<input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n    case &#34;REMOVE_ITEM&#34;:\n      return [...state.slice(0, action.index).concat([...state.slice(action.index + 1, state.length)])];\n    default:\n      return state;\n  }\n};\n\nconst removeItem = (index) => {\n  return {\n    type: &#34;REMOVE_ITEM&#34;,\n    index\n  }\n}\n'">
+<input type="button" class="btn btn-primary" value="remove an item" onclick="document.editor.textbox.value+='\nconst immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n    case &#34;REMOVE_ITEM&#34;:\n      return [...state.slice(0, action.index).concat([...state.slice(action.index + 1, state.length)])];\n    default:\n      return state;\n  }\n};\n\nconst removeItem = (index) => {\n  return {\n    type: &#34;REMOVE_ITEM&#34;,\n    index\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);\n'">
 </aside>
 
         </td>
