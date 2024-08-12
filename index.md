@@ -145,7 +145,7 @@ input:not([type:"button"]) {
 <aside class="left">Object</aside>
 
 <aside class="middle">
-<input type="button" class="btn btn-primary" value="copy state" onclick="document.editor.textbox.value+=''"></p>
+<input type="button" class="btn btn-primary" value="copy state" onclick="document.editor.textbox.value+=''">
 </aside>
 
         </td>
