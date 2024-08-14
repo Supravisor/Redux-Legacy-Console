@@ -145,7 +145,7 @@ input:not([type:"button"]) {
 <aside class="left">Object</aside>
 
 <aside class="middle">
-<input type="button" class="btn btn-primary" value="copy state" onclick="document.editor.textbox.value+='\nconst defaultState = {\n  user: &#34;AlfaOne&#34;,\n  status: &#34;offline&#34;\n};\n'">
+<input type="button" class="btn btn-primary" value="copy state" onclick="document.editor.textbox.value+='\nconst defaultState = {\n  user: &#34;AlfaOne&#34;,\n  status: &#34;offline&#34;\n};\n\nconst immutableReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    case &#34;ONLINE&#34;:\n      return Object.assign({}, state, {status: &#34;online&#34;});\n    default:\n      return state;\n  }\n};\n'">
 </aside>
 
         </td>
